@@ -95,4 +95,10 @@ public class User implements Serializable {
     public int hashCode() {
         return Objects.hash(getId());
     }
+
+    public void updateData(User user) {
+        setName(user.name);
+        setEmail(user.email);
+        setPhone(user.phone);
+    }
 }
